@@ -58,7 +58,26 @@ export const login =async (req, res) => {
         const tokenData= {
             id: userExists._id
         }
-        const token = await jwt.sign()
+        const token = jwt.sign(tokenData, process.env.SECRET_KEY, { expiresIn: "1d" });
+        return res.status(200).cookie("token",token,{maxAge:1*24*60*60*1000,httpOnly:true,sameSite:'strict'}).json({
+            message : `Welcome back ${userExists.name}`,
+            user:{
+                id:userExists._id,
+                name:userExists.name,
+                email:userExists.email
+            },
+            success:true
+        });
+    } catch (error) {
+        console.log(error);
+    }
+}
+export const logout = async (req, res) => {
+    try {
+        return res.status(200).cookie("token","",{maxAge:0}).json({
+            message:"Logged out successfully",
+            success:true
+        })
     } catch (error) {
         console.log(error);
     }
