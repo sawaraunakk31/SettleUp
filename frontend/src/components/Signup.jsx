@@ -6,18 +6,21 @@ import { Button } from "./ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "sonner";
+import backgroundImage from "../assets/divbg.png";
 const Signup = () => {
   const [input, setInput] = useState({
     name: "",
     email: "",
     password: "",
   });
+
   const changeHandler = (e) => {
     setInput({
       ...input,
       [e.target.name]: e.target.value,
     });
   };
+
   const navigate = useNavigate();
   const submitHandler = async (e) => {
     console.log(input);
@@ -45,9 +48,13 @@ const Signup = () => {
       toast.error(errorMessage);
     }
   };
+
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
-      <form action="" onSubmit={submitHandler} className="w-96 p-8 shadow-lg">
+    <div
+      className="flex items-center justify-center w-screen h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <form action="" onSubmit={submitHandler} className="w-96 p-8 shadow-lg bg-white rounded-lg">
         <div className="w-full flex justify-center mb-5">
           <Logo />
         </div>

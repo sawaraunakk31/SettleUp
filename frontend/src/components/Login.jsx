@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
+import backgroundImage from "../assets/divbg.png";
 const Login = () => {
   const [input, setInput] = useState({
     email: "",
@@ -45,7 +46,10 @@ const Login = () => {
     }
   };
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
+    <div className="flex items-center justify-center w-screen h-screen"
+    style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      
       <form action="" onSubmit={submitHandler} className="w-96 p-8 shadow-lg">
         <div className="w-full flex justify-center mb-5">
           <Logo />

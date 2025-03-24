@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Logo = () => {
-    return(
+    return (
         <Link to="/">
-           <img src="./src/assets/expenseLogo.jpg" alt="Logo" className="w-30 h-24 rounded-lg object-cover"/>
-
+            <img 
+                src="./src/assets/expenseLogo.jpg" 
+                alt="Logo" 
+                className="w-20 h-12 rounded-lg object-contain" 
+            />
         </Link>
-    )
-}
+    );
+};
 export default Logo;

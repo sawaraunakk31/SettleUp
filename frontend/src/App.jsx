@@ -1,4 +1,4 @@
-import { Home } from 'lucide-react';
+import Home from './components/Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
