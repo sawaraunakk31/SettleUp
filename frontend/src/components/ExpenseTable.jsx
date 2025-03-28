@@ -11,7 +11,7 @@ import {
 import { useSelector } from "react-redux";
 import { Checkbox } from "./ui/checkbox";
 import { Button } from "./ui/button";
-import { Edit2, Trash } from "lucide-react";
+import { Trash } from "lucide-react";
 import UpdateExpense from "./UpdateExpense";
 import { useEffect, useState } from "react";
 import axios from "axios";
