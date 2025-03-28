@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import CreateExpense from "./CreateExpense";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
