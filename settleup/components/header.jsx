@@ -29,7 +29,7 @@ const header = () => {
                 </div>
                 {path === "/" && (
                     <div className="flex-1 flex justify-center">
-                        <div className="hidden md:flex items-center gap-8 ml-16">
+                        <div className="hidden md:flex items-center gap-8 ml-11">
                             <Link
                                 href="#features"
                                 className="text-sm font-bold hover:text-green-600 transition"
