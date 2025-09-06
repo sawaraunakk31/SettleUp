@@ -98,7 +98,7 @@ export default function LandingPage() {
       <section id="how-it-works" className="py-20">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <Badge variant="outline" className="bg-green-100 text-green-700">
-            How It Works
+            How It Works
           </Badge>
           <h2 className="gradient-title mt-2 text-3xl md:text-4xl">
             Splitting expenses has never been easier
@@ -165,7 +165,7 @@ export default function LandingPage() {
           </h2>
           <p className="mx-auto max-w-[600px] text-green-100 md:text-xl/relaxed">
             Join thousands of users who have made splitting expenses
-            stress‑free.
+            stress-free.
           </p>
           <Button asChild size="lg" className="bg-green-800 hover:opacity-90">
             <Link href="/dashboard">
@@ -178,7 +178,7 @@ export default function LandingPage() {
 
       {/* ───── Footer ───── */}
       <footer className="border-t bg-gray-50 py-12 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} SettleUp. All rights reserved.
+        Made with ❤️ by Raunak & Sujal
       </footer>
     </div>
   );
